@@ -53,6 +53,36 @@ namespace ShoppingBot
         {
             txtKey.Enabled = false;
         }
+
+        private void btnSelectFile_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.ShowDialog();
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            if (validateShoppingFile())
+            {
+                txtFileName.Text = openFileDialog1.FileName;
+                btnSaveFile.Enabled = true;
+                addContentToList();
+            }
+            else
+            {
+                MessageBox.Show("Problem loading file, try again", "Shopping Bot", MessageBoxButtons.OK);
+            }
+        }
+
+        private void addContentToList()
+        {
+            throw new NotImplementedException();
+        }
+
+        private bool validateShoppingFile()
+        {
+            return true;
+        }
     }
 
 }
