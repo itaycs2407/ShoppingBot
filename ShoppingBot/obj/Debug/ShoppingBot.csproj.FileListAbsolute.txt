@@ -1,0 +1,15 @@
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\bin\Debug\ShoppingBot.exe.config
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\bin\Debug\ShoppingBot.exe
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\bin\Debug\ShoppingBot.pdb
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\bin\Debug\Telegram.Bot.dll
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\bin\Debug\Telegram.Bot.xml
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\obj\Debug\ShoppingBot.csprojAssemblyReference.cache
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\obj\Debug\ShoppingBot.Properties.Resources.resources
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\obj\Debug\ShoppingBot.csproj.GenerateResource.cache
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\obj\Debug\ShoppingBot.csproj.CoreCompileInputs.cache
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\obj\Debug\ShoppingBot.csproj.CopyComplete
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\obj\Debug\ShoppingBot.exe
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\obj\Debug\ShoppingBot.pdb
+C:\Users\Itay Cohen\Desktop\Projects\ShoppingBot\ShoppingBot\obj\Debug\ShoppingBot.MainFrm.resources
