@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
 
 namespace ShoppingBot
@@ -13,6 +8,8 @@ namespace ShoppingBot
     public partial class MainFrm : Form
     {
         public Controller ctrl;
+        private string[] m_Items;
+       
         public MainFrm()
         {
             InitializeComponent();
@@ -76,13 +73,48 @@ namespace ShoppingBot
 
         private void addContentToList()
         {
-            throw new NotImplementedException();
+            m_Items = getItemsFromFile(openFileDialog1.FileName);
+            updateItemList();
+        }
+
+        private string[] getItemsFromFile(string i_FileName)
+        {
+            return File.ReadAllLines(i_FileName);
         }
 
         private bool validateShoppingFile()
         {
             return true;
         }
-    }
 
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnDeleteItem.Enabled = listBox1.SelectedItem != null;
+        }
+        private void btnDeleteItem_Click(object sender, EventArgs e)
+        {
+            string itemSelected = listBox1.SelectedItem.ToString();
+            DialogResult result = MessageBox.Show($"Are you sure you want to delete {itemSelected} ?", "Shopping Bot", MessageBoxButtons.YesNo);
+            if (result == DialogResult.Yes)
+            {
+                List<string> newListItems = new List<string>();
+                foreach (string item in m_Items)
+                {
+                    if (!item.Equals(itemSelected))
+                    {
+                        newListItems.Add(item);
+                    }
+                }
+                m_Items = newListItems.ToArray();
+                updateItemList();
+                btnDeleteItem.Enabled = false;
+            }
+        }
+
+        private void updateItemList()
+        {
+            listBox1.Items.Clear();
+            listBox1.Items.AddRange(m_Items);
+        }
+    }
 }
